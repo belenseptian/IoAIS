@@ -8,7 +8,7 @@ void taskTransmit(void *pvParameters)
       // sendtoServer(rawAIS);
       if(connected == 1)
       {
-        sendtoWeb(rawAIS);
+        sendtoWeb(encrypt(rawAIS));
       }
     }
     vTaskDelay(700 / portTICK_PERIOD_MS);
