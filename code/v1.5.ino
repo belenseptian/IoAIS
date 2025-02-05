@@ -7,6 +7,12 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h> //credit goes to adafruit
 #include <Adafruit_SSD1306.h> //credit goes to adafruit
+// import AES encryption library
+#include "AESLib.h"
+// import base64 conversion library
+#include "arduino_base64.hpp"
+// declare a global AESLib object
+AESLib aesLib;
 
 /* Constants */
 #define RXD2 16
